@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Kshitij-Taywade Portfolio</title>
+
+    <link rel="stylesheet" href="Portfolio.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+
+
+            <div class="nav-div">
+
+                <svg id="hamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="white"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+
+
+                <div id="div-header-div1">
+                    MR.Kshitij
+                </div>
+                <br>
+
+                <div id="div-header-div2">
+                    <ul>
+                        <li><a href="Porfolio.html" target="_parent">Home</a></li>
+                        <li><a href="About Page.html" target="_blank">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+
+                        <li><a href="#project">Projects</a></li>
+                        <li class="certificate">
+
+                            <select style="display: block; top: 2.5px;">
+                            <option selected="selected">Certificates ...</option>
+                          
+                            <option value="">Software Certificates</option>
+                            <option value="search">Hardware Certificates</option>
+                        
+                        </select>
+                        </li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+
+                </div>
+
+
+
+                <div id="div-header-div3">Resume</div>
+        </nav>
+        </div>
+
+        <div class="left-hamburger">
+
+
+
+
+            <ul>
+                <li><a href="Porfolio.html" target="_parent">Home</a></li>
+                <li><a href="About Page.html" target="_blank">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+
+                <li><a href="#project">Projects</a></li>
+                <li class="certificate">
+
+                    <select style="display: block; top: 2.5px;">
+                        <option selected="selected">Certificates ...</option>
+                      
+                        <option value="">Software Certificates</option>
+                        <option value="search">Hardware Certificates</option>
+                    
+                    </select>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+
+        </div>
+
+    </header>
+
+    <main>
+        <section class="section1">
+
+            <div id="div-main-div2">
+
+                <img src="Kshitij img 2.jpg" alt="Kshitij img">
+
+
+            </div>
+
+            <div id="div-main-div1">
+
+                <div> Hello , I am <span class="element">Kshitij Taywade</span>
+                </div>
+
+                <span style="color:white;" id="element">
+                    
+                </span>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br><br>
+
+                <span class="div-main-div1-div2">Hire Me</span>
+                <span class="div-main-div1-div3">Get Resume</span>
+            </div>
+
+
+        </section>
+        <div class="header">Skills</div>
+        <br><br><br>
+
+        <section class="section2">
+
+            <div id="section2-div1">
+
+                <!--
+                <div class="section-div1-div1">
+                    <img src="https://talakolavijay.vercel.app/static/media/html.be50d4568ab0cb01edb8.png" alt="HTML">
+
+                    <br><br>
+                    <p>HTML</p>
+                </div>
+                <div class="section-div1-div1">
+                    <img src="https://talakolavijay.vercel.app/static/media/css.8aaf7833370a6845139c.png" alt="CSS">
+                    <br><br>
+                    <p>CSS</p>
+                </div>
+                <div class="section-div1-div1">
+                    <img src="data:image/png;base64,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"
+                        alt="HTML">
+                    <br><br>
+                    <p>JavaScript</p>
+                </div>
+                <div class="section-div1-div1">
+                  
+                    <p>TypeScript</p>
+                </div>
+
+                -->
+
+                <p>Coming soon...</p>
+
+            </div>
+
+        </section>
+
+        <br><br><br>
+        <div class="header">Projects</div>
+        <br><br><br>
+
+        <div class="section3">
+
+            <div id="section3-div1">
+                <br>
+                <p>Coming soon...</p>
+            </div>
+
+
+
+        </div>
+
+        <br><br><br>
+        <div class="header">Contact</div>
+        <br><br><br>
+
+        <div class="section4">
+
+            <div id="section4-div">
+
+
+                <div class="section4-div-div1">
+                    <br><br>
+                    <h2>Get In Touch</h2>
+                    <br>
+
+                    <div class="section4-div-div1-div1">
+
+                        <div class="section4-div1-logo1">
+                            <svg class="svg1" fill="currentColor " stroke-width="0 " viewBox="0 0 496 512 " xmlns="http://www.w3.org/2000/svg "><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7
+                                2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5
+                                239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5
+                                0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5
+                                9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7
+                                1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3
+                                5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z "></path></svg>
+                        </div>
+                        <div class="section4-div1-logo2 ">
+                            <svg class="svg1 " stroke="currentColor " fill="currentColor " stroke-width="0 " viewBox="0 0 448 512 " xmlns="http://www.w3.org/2000/svg "><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6
+                                0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6
+                                0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z "></path></svg>
+                        </div>
+                        <div class="section4-div1-logo3 ">
+
+                            <svg class="svg1 " stroke="currentColor " fill="currentColor " stroke-width="0 " viewBox="0 0 448 512 " xmlns="http://www.w3.org/2000/svg "><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5
+                                339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1
+                                27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1
+                                184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7
+                                9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z "></path></svg>
+                        </div>
+                        <div class="section4-div1-logo4">
+
+                            <svg class="svg1 " stroke="currentColor " fill="currentColor " stroke-width="0 " viewBox="0 0 512 512 " xmlns="http://www.w3.org/2000/svg "><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7
+                                275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z "></path></svg>
+                        </div>
+                    </div>
+
+
+                    <div id="section4-div-div1-div2">
+
+                        <br>
+                        <p>+91 9130176723</p>
+                        <br>
+                        <p>kshitijtaywade86@gmail.com</p>
+                        <br>
+                        <p>Wardha, Maharashtra, India</p>
+
+                        <div class="call-div">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="svg-call" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"></path></svg>
+                        </div>
+
+                        <div class="email-div">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="email-svg" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg>
+                        </div>
+
+                        <div class="address-div ">
+                            <svg class="address-svg " stroke="currentColor " fill="currentColor " stroke-width="0 " viewBox="0 0 384 512 " class="text-white " xmlns="http://www.w3.org/2000/svg "><path d="M172.268 501.67C26.97 291.031 0 269.413 0 192
+                                0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z "></path></svg>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="section4-div-div2 ">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+
+                        <input type="hidden" name="access_key" value="f2727b81-39f1-4db5-99f4-b57000265ecb">
+                        <input type="text " placeholder="Name " name="name " required>
+
+                        <input type="email " name="email" placeholder="E-mail " required>
+
+                        <textarea name="Message" id=" " placeholder="Message " required></textarea>
+
+
+                        <button>Send</button>
+                    </form>
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+        <div class="footer-div ">
+            <p>Made by <b>Kshitij R. Taywade</b></p>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js "></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer .', 'Electronic Engineer.', 'Web Designer.'],
+            typeSpeed: 100,
+        });
+    </script>
+</body>
+
+</html>
