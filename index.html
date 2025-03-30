@@ -17,7 +17,6 @@
 
             <div class="nav-div">
 
-                <svg id="hamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="white"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
 
 
                 <div id="div-header-div1">
@@ -26,23 +25,21 @@
                 <br>
 
                 <div id="div-header-div2">
-                    <ul>
+                    <ul class="menu">
                         <li><a href="Porfolio.html" target="_parent">Home</a></li>
                         <li><a href="About Page.html" target="_blank">About</a></li>
                         <li><a href="#skills">Skills</a></li>
 
                         <li><a href="#project">Projects</a></li>
-                        <li class="certificate">
 
-                            <select style="display: block; top: 2.5px;">
-                            <option selected="selected">Certificates ...</option>
-                          
-                            <option value="" onclick="window.open('Software Certificates.html', '_blank');">Software Certificates</option>
 
-                            <option value="search" onclick="window.open('Hardware Certificates.html', '_blank');">Hardware Certificates</option>
-                        
-                        </select>
-                        </li>
+                        <li class="hover-area menu-item">Certificates</li>
+                        <div class="certificates-div">
+                            <div class="soft-certificate"><a href="Software Certificates.html">Software Certificates</a></div>
+                            <br>
+                            <div class="hard-certificate"><a href="Hardware Certificates.html">Hardware Certificates</a></div>
+                        </div>
+
                         <li><a href="#contact">Contact</a></li>
                     </ul>
 
@@ -54,32 +51,30 @@
         </nav>
         </div>
 
-        <div class="left-hamburger">
+        <label class="menu-toggle">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="About Page.html" target="_blank">About</a></li>
+                    <li><a href="#skills">SKills</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li class="hover-area menu-item">Certificates</li>
+                    <div class="certificates-div">
+                        <div class="soft-certificate"><a href="Software Certificates.html">Software Certificates</a></div>
+                        <br>
+                        <div class="hard-certificate"><a href="Hardware Certificates.html">Hardware Certificates</a></div>
+                    </div>
+                    <li><a href="#contact">Contacts</a></li>
 
-
-
-
-            <ul>
-                <li><a href="Porfolio.html" target="_parent">Home</a></li>
-                <li><a href="About Page.html" target="_blank">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-
-                <li><a href="#project">Projects</a></li>
-                <li class="certificate">
-
-                    <select style="display: block; top: 2.5px;">
-                        <option selected="selected">Certificates ...</option>
-                      
-                        <option value="">Software Certificates</option>
-                        <option value="search">Hardware Certificates</option>
                     
-                    </select>
-                </li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+                </ul>
+            </nav>
+        </label>
 
-
-        </div>
 
     </header>
 
