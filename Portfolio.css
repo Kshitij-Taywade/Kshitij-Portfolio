@@ -188,8 +188,8 @@
                 top: 330px;
                 left: 70%;
             }
-            .certificates-div:hover,
-            .menu-item:hover+.certificates-div {
+            .certificates-div:target,
+            .menu-item:target+.certificates-div {
                 display: block;
             }
             #div-header-div1 {
