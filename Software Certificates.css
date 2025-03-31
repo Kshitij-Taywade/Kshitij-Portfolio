@@ -137,9 +137,9 @@ a {
     }
     .menu-toggle span {
         display: block;
-        width: 30px;
-        height: 5px;
-        margin: 6px 0;
+        width: 20px;
+        height: 3px;
+        margin: 4px 0;
         background-color: black;
         transition: 0.4s;
     }
@@ -196,6 +196,7 @@ a {
     }
     #div-header-div1 {
         cursor: pointer;
+        font-size: 21px;
         position: absolute;
         left: 65%;
     }

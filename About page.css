@@ -137,9 +137,9 @@ a {
     }
     .menu-toggle span {
         display: block;
-        width: 30px;
-        height: 5px;
-        margin: 6px 0;
+        width: 20px;
+        height: 3px;
+        margin: 4px 0;
         background-color: black;
         transition: 0.4s;
     }
@@ -196,6 +196,7 @@ a {
     }
     #div-header-div1 {
         cursor: pointer;
+        font-size: 21px;
         position: absolute;
         left: 65%;
     }
@@ -368,77 +369,6 @@ a {
 /* Nav media query for mobile start*/
 
 @media (min-width:0px) and (max-width:450px) {
-    .menu-toggle {
-        visibility: visible;
-        background-color: white;
-        position: fixed;
-        top: 20px;
-        left: 20px;
-        z-index: 2;
-        cursor: pointer;
-    }
-    .menu-toggle input {
-        display: none;
-    }
-    .menu-toggle span {
-        display: block;
-        width: 30px;
-        height: 5px;
-        margin: 6px 0;
-        background-color: black;
-        transition: 0.4s;
-    }
-    .menu-toggle input:checked~.menu span:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
-    }
-    .menu-toggle input:checked~.menu span:nth-child(2) {
-        opacity: 0;
-    }
-    .menu-toggle input:checked~.menu span:nth-child(3) {
-        transform: rotate(-45deg) translate(5px, -5px);
-    }
-    .menu {
-        position: fixed;
-        top: 0%;
-        left: -100%;
-        width: 250px;
-        height: 100%;
-        background-color: rgb(8, 8, 49);
-        transition: left 0.4s ease;
-        padding-top: 10px;
-    }
-    .menu ul {
-        list-style: none;
-        padding: 0;
-    }
-    .menu ul li {
-        padding: 15px;
-        text-align: center;
-    }
-    .menu ul li a {
-        color: white;
-        text-decoration: none;
-        font-size: 20px;
-    }
-    .menu-toggle input:checked~.menu {
-        left: 0;
-    }
-    .certificates-div {
-        display: none;
-        margin-top: 10px;
-        padding: 10px;
-        font-size: 16px;
-        width: 150px;
-        border-radius: 10px;
-        background-color: rgb(8 8 49);
-        position: absolute;
-        top: 330px;
-        left: 70%;
-    }
-    .certificates-div:hover,
-    .menu-item:hover+.certificates-div {
-        display: block;
-    }
     .section1 {
         width: 100vw;
         height: 150vh;
