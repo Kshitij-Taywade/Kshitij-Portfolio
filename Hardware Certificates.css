@@ -114,18 +114,81 @@ a {
 /* Nav media query for mobile start*/
 
 @media (min-width:0px) and (max-width:450px) {
-    #hamburger {
+    .menu-toggle {
         visibility: visible;
-        width: 20px;
-        cursor: pointer;
-        color: white;
+        background-color: white;
         position: fixed;
-        right: 90%;
+        top: 20px;
+        left: 20px;
+        z-index: 2;
+        cursor: pointer;
+    }
+    .menu-toggle input {
+        display: none;
+    }
+    .menu-toggle span {
+        display: block;
+        width: 30px;
+        height: 5px;
+        margin: 6px 0;
+        background-color: black;
+        transition: 0.4s;
+    }
+    .menu-toggle input:checked~.menu span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    .menu-toggle input:checked~.menu span:nth-child(2) {
+        opacity: 0;
+    }
+    .menu-toggle input:checked~.menu span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+    .menu {
+        position: fixed;
+        top: 0%;
+        left: -100%;
+        width: 250px;
+        height: 100%;
+        background-color: rgb(8, 8, 49);
+        transition: left 0.4s ease;
+        padding-top: 10px;
+    }
+    .menu ul {
+        list-style: none;
+        padding: 0;
+    }
+    .menu ul li {
+        padding: 15px;
+        text-align: center;
+    }
+    .menu ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .menu-toggle input:checked~.menu {
+        left: 0;
+    }
+    .certificates-div {
+        display: none;
+        margin-top: 10px;
+        padding: 10px;
+        font-size: 16px;
+        width: 150px;
+        border-radius: 10px;
+        background-color: rgb(8 8 49);
+        position: absolute;
+        top: 330px;
+        left: 70%;
+    }
+    .certificates-div:hover,
+    .menu-item:hover+.certificates-div {
+        display: block;
     }
     #div-header-div1 {
         cursor: pointer;
         position: absolute;
-        left: 75%;
+        left: 60%;
     }
     #div-header-div2 {
         visibility: hidden;
@@ -494,7 +557,7 @@ svg a {
         font-size: 20px;
         font-family: monospace, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
         color: white;
         background-color: rgb(8 8 49);
@@ -514,7 +577,7 @@ svg a {
         margin-top: 5%;
         font-family: monospace, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
         color: white;
         background-color: rgb(8 8 49);
