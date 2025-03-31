@@ -197,7 +197,7 @@ a {
     #div-header-div1 {
         cursor: pointer;
         position: absolute;
-        left: 60%;
+        left: 65%;
     }
     #div-header-div2 {
         visibility: hidden;
@@ -491,7 +491,8 @@ svg {
         font-size: 20px;
         font-family: monospace, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         display: flex;
-        justify-content: space-around;
+        text-align: center;
+        justify-content: center;
         align-items: center;
         color: white;
         background-color: rgb(8 8 49);
@@ -510,8 +511,9 @@ svg {
         font-size: 20px;
         margin-top: 5%;
         font-family: monospace, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
         color: white;
         background-color: rgb(8 8 49);
