@@ -347,6 +347,17 @@
             font-weight: 700;
         }
         
+        h4 {
+            text-wrap: nowrap;
+            animation: typing 5s steps(50) infinite alternate-reverse;
+        }
+        
+        @keyframes typing {
+            from {
+                width: 0ch;
+            }
+        }
+        
         #div-main-div1 .div-main-div1-div2 {
             width: 30%;
             border: 2px solid white;
