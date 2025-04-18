@@ -347,17 +347,6 @@
             font-weight: 700;
         }
         
-        h4 {
-            text-wrap: nowrap;
-            animation: typing 5s steps(50) infinite alternate-reverse;
-        }
-        
-        @keyframes typing {
-            from {
-                width: 0ch;
-            }
-        }
-        
         #div-main-div1 .div-main-div1-div2 {
             width: 30%;
             border: 2px solid white;
@@ -691,6 +680,7 @@
             height: 70%;
             margin: 0PX 20PX 0PX 20PX;
             border-radius: 10px;
+            text-align: center;
         }
         /* Media query for mobile*/
         
