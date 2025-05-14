@@ -5,7 +5,7 @@
 
 nav {
     height: 60px;
-    width: 100%;
+    width: 100vw;
     font-size: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
@@ -22,6 +22,7 @@ nav {
     background-color: rgb(8 8 49);
     display: flex;
     justify-content: space-around;
+    gap: 10%;
     align-items: center;
     position: fixed;
 }
@@ -40,19 +41,27 @@ nav {
     cursor: pointer;
     box-sizing: border-box;
     font-size: 25px;
+    color: white;
+    width: 20px;
+}
+
+#div-header-div1 p {
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
 }
 
 #div-header-div2 ul {
     display: flex;
-    gap: 34px;
+    gap: 40px;
 }
 
-#div-header-div2 ul li a {
+#div-header-div2 ul li {
+    text-decoration: none;
     list-style: none;
-    list-style-type: none;
     color: white;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 a {
@@ -60,9 +69,9 @@ a {
     color: white;
 }
 
-#div-header-div2 ul li a:hover {
-    font-size: 17px;
-    color: rgb(155, 155, 225);
+#div-header-div2 ul li:hover {
+    font-size: 18px;
+    color: white;
     text-decoration: underline;
 }
 
