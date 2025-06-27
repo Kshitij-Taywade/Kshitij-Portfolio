@@ -5,7 +5,7 @@
 
 nav {
     height: 60px;
-    width: 100vw;
+    width: 100%;
     font-size: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
@@ -22,56 +22,30 @@ nav {
     background-color: rgb(8 8 49);
     display: flex;
     justify-content: space-around;
-    gap: 10%;
     align-items: center;
     position: fixed;
-}
-
-.menu-toggle {
-    visibility: hidden;
-    background-color: white;
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 2;
-    cursor: pointer;
 }
 
 #div-header-div1 {
     cursor: pointer;
     box-sizing: border-box;
     font-size: 25px;
-    color: white;
-    width: 20px;
-}
-
-#div-header-div1 p {
-    cursor: pointer;
-    font-size: 20px;
-    color: white;
 }
 
 #div-header-div2 ul {
     display: flex;
-    gap: 40px;
+    gap: 34px;
 }
 
 #div-header-div2 ul li {
-    text-decoration: none;
     list-style: none;
-    color: white;
     cursor: pointer;
-    font-size: 17px;
-}
-
-a {
-    text-decoration: none;
-    color: white;
+    font-size: 15px;
 }
 
 #div-header-div2 ul li:hover {
-    font-size: 18px;
-    color: white;
+    font-size: 17px;
+    color: rgb(155, 155, 225);
     text-decoration: underline;
 }
 
@@ -92,388 +66,24 @@ a {
     background-color: rgb(224, 23, 23);
 }
 
-.menu {
-    list-style: none;
-    padding: 0;
-}
-
-.hover-area {
-    cursor: pointer;
-}
-
-.certificates-div {
-    display: none;
-    margin-top: 10px;
-    padding: 10px;
-    font-size: 16px;
-    width: 150px;
-    border-radius: 10px;
-    background-color: rgb(8 8 49);
-    position: absolute;
-    top: 30px;
-    left: 62%;
-}
-
-.certificates-div:hover,
-.menu-item:hover+.certificates-div {
-    display: block;
-}
-
-
-/* Nav media query for mobile start*/
-
-@media (min-width:0px) and (max-width:450px) {
-    .menu-toggle {
-        visibility: visible;
-        background-color: white;
-        position: fixed;
-        top: 20px;
-        left: 20px;
-        z-index: 2;
-        cursor: pointer;
-    }
-    .menu-toggle input {
-        display: none;
-    }
-    .menu-toggle span {
-        display: block;
-        width: 20px;
-        height: 3px;
-        margin: 4px 0;
-        background-color: black;
-        transition: 0.4s;
-    }
-    .menu-toggle input:checked~.menu span:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
-    }
-    .menu-toggle input:checked~.menu span:nth-child(2) {
-        opacity: 0;
-    }
-    .menu-toggle input:checked~.menu span:nth-child(3) {
-        transform: rotate(-45deg) translate(5px, -5px);
-    }
-    .menu {
-        position: fixed;
-        top: 0%;
-        left: -100%;
-        width: 250px;
-        height: 100%;
-        background-color: rgb(8, 8, 49);
-        transition: left 0.4s ease;
-        padding-top: 10px;
-    }
-    .menu ul {
-        list-style: none;
-        padding: 0;
-    }
-    .menu ul li {
-        padding: 15px;
-        text-align: center;
-    }
-    .menu ul li a {
-        color: white;
-        text-decoration: none;
-        font-size: 20px;
-    }
-    .menu-toggle input:checked~.menu {
-        left: 0;
-    }
-    .certificates-div {
-        display: none;
-        margin-top: 10px;
-        padding: 10px;
-        font-size: 16px;
-        width: 150px;
-        border-radius: 10px;
-        background-color: rgb(8 8 49);
-        position: absolute;
-        top: 330px;
-        left: 70%;
-    }
-    .certificates-div:hover,
-    .menu-item:hover+.certificates-div {
-        display: block;
-    }
-    #div-header-div1 {
-        cursor: pointer;
-        font-size: 21px;
-        position: absolute;
-        left: 65%;
-    }
-    #div-header-div2 {
-        visibility: hidden;
-    }
-    #div-header-div3 {
-        visibility: hidden;
-    }
-    .nav-div {
-        height: 60px;
-        width: 100%;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        background-color: rgb(8 8 49);
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        position: fixed;
-        left: 0px;
-    }
-}
-
-
-/* Nav media query for tab start*/
-
-@media (min-width:451px) and (max-width:1024px) {
-    .menu-toggle {
-        visibility: visible;
-        background-color: white;
-        position: fixed;
-        top: 20px;
-        left: 20px;
-        z-index: 2;
-        cursor: pointer;
-    }
-    .menu-toggle input {
-        display: none;
-    }
-    .menu-toggle span {
-        display: block;
-        width: 30px;
-        height: 5px;
-        margin: 6px 0;
-        background-color: black;
-        transition: 0.4s;
-    }
-    .menu-toggle input:checked~.menu span:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
-    }
-    .menu-toggle input:checked~.menu span:nth-child(2) {
-        opacity: 0;
-    }
-    .menu-toggle input:checked~.menu span:nth-child(3) {
-        transform: rotate(-45deg) translate(5px, -5px);
-    }
-    .menu {
-        position: fixed;
-        top: 0%;
-        left: -100%;
-        width: 250px;
-        height: 100%;
-        background-color: rgb(8, 8, 49);
-        transition: left 0.4s ease;
-        padding-top: 10px;
-    }
-    .menu ul {
-        list-style: none;
-        padding: 0;
-    }
-    .menu ul li {
-        padding: 15px;
-        text-align: center;
-    }
-    .menu ul li a {
-        color: white;
-        text-decoration: none;
-        font-size: 20px;
-    }
-    .menu-toggle input:checked~.menu {
-        left: 0;
-    }
-    .certificates-div {
-        display: none;
-        margin-top: 10px;
-        padding: 10px;
-        font-size: 16px;
-        width: 150px;
-        border-radius: 10px;
-        background-color: rgb(8 8 49);
-        position: absolute;
-        top: 330px;
-        left: 70%;
-    }
-    .certificates-div:hover,
-    .menu-item:hover+.certificates-div {
-        display: block;
-    }
-    #div-header-div1 {
-        cursor: pointer;
-        position: absolute;
-        left: 75%;
-    }
-    #div-header-div2 {
-        visibility: hidden;
-    }
-    #div-header-div3 {
-        visibility: hidden;
-    }
-    .nav-div {
-        height: 60px;
-        width: 100%;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        background-color: rgb(8 8 49);
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        position: fixed;
-        left: 0px;
-    }
-}
-
 #section1 {
-    width: 150vw;
+    width: 100vw;
     height: 74.1vh;
-    border: 1px solid black;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-}
-
-.section1-div1 {
-    border: 1px solid black;
-    width: 25%;
-    height: 40vh;
-    margin-left: 5%;
-    margin-right: 5%;
-    border-radius: 10px;
-    border: none;
-    box-shadow: 0.5px 0.5px 10px 1px;
 }
 
 .section1-div {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-}
-
-.div-shitu {
     border: 1px solid black;
-    width: 0%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-    bottom: 100%;
-    border: none;
-    border-radius: 10px;
-}
-
-.section1-div1:hover {
-    .div-shitu {
-        border: 1px solid black;
-        background-color: rgb(8 8 49);
-        width: 100%;
-        height: 100%;
-        transition-duration: 0.4s;
-    }
-}
-
-.div-shitu h3,
-.date {
-    color: white;
-    text-align: center;
-    margin-top: 30px;
-    font-size: 23px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.div-shitu p {
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
-}
-
-.para,
-.div-shitu-bold {
-    text-align: center;
-}
-
-a {
-    color: white;
-    margin: 0px;
-    font-size: 20px;
-    text-decoration: none;
-}
-
-.date {
-    color: white;
-    text-align: center;
-    margin-top: 25px;
-    font-size: 23px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-svg {
-    color: white;
-}
-
-.section1-div img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-
-/* Media query for mobile*/
-
-@media (min-width:0px) and (max-width:450px) {
-    #section1 {
-        width: 100%;
-        height: 210%;
-        margin-bottom: 10%;
-        display: flex;
-        justify-content: space-around;
-        margin-top: 10%;
-        flex-wrap: wrap;
-        gap: 50px;
-    }
-    .section1-div1 {
-        border: 1px solid black;
-        width: auto;
-        height: 60vh;
-        margin-left: 5%;
-        margin-right: 5%;
-        border-radius: 10px;
-        border: none;
-        box-shadow: 0.5px 0.5px 10px 1px;
-    }
-    .div-shitu h3,
-    .date {
-        color: white;
-        text-align: center;
-        margin-top: 100px;
-        font-size: 23px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-}
-
-
-/* Media query for tab*/
-
-@media (min-width:451px) and (max-width:1024px) {
-    #section1 {
-        width: 100vw;
-        height: 210%;
-        margin-bottom: 10%;
-        display: flex;
-        justify-content: space-around;
-        margin-top: 10%;
-        flex-wrap: wrap;
-        gap: 50px;
-    }
-    .section1-div1 {
-        border: 1px solid black;
-        width: auto;
-        height: 60vh;
-        margin-left: 5%;
-        margin-right: 5%;
-        border-radius: 10px;
-        border: none;
-        box-shadow: 0.5px 0.5px 10px 1px;
-    }
+    width: 20%;
+    height: 45%;
+    margin: 2%;
 }
 
 .footer-div {
-    height: 65px;
-    width: 100%;
+    height: 15vh;
+    width: 100vw;
     font-size: 20px;
     font-family: monospace, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
@@ -481,46 +91,4 @@ svg {
     align-items: center;
     color: white;
     background-color: rgb(8 8 49);
-    position: fixed;
-}
-
-
-/* Media query for mobile*/
-
-@media (min-width:0px) and (max-width:450px) {
-    .footer-div {
-        height: 80px;
-        width: 100%;
-        font-size: 15px;
-        font-family: monospace, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        background-color: rgb(8 8 49);
-        position: relative;
-        bottom: 0%;
-    }
-}
-
-
-/* Media query for tab*/
-
-@media (min-width:451px) and (max-width:1024px) {
-    .footer-div {
-        height: 80px;
-        width: 100vw;
-        font-size: 20px;
-        margin-top: 5%;
-        font-family: monospace, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        background-color: rgb(8 8 49);
-        position: relative;
-        bottom: 0%;
-    }
 }
