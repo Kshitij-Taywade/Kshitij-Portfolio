@@ -14,11 +14,7 @@
 
     <header>
         <nav>
-
-
             <div class="nav-div">
-
-
 
                 <div id="div-header-div1">
                     MR.Kshitij
@@ -85,7 +81,7 @@
 
             <div id="div-main-div2">
 
-                <img src="Kshitij img 2.jpg" alt="Kshitij img">
+                <img src="images/Kshitij img 2.jpg" alt="Kshitij img">
 
 
             </div>
@@ -122,15 +118,15 @@
 
             <div id="section2-div1">
 
-                <!--
+
                 <div class="section-div1-div1">
-                    <img src="https://talakolavijay.vercel.app/static/media/html.be50d4568ab0cb01edb8.png" alt="HTML">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHlGA-K0m_XhMWzFw9kiFNAX8Y9PIuvE5ni51Ta2qaHQ&s" alt="HTML">
 
                     <br><br>
                     <p>HTML</p>
                 </div>
                 <div class="section-div1-div1">
-                    <img src="https://talakolavijay.vercel.app/static/media/css.8aaf7833370a6845139c.png" alt="CSS">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrKcF5L31Xggx8cJ0Q9vwYQePHG_g_k061mtW73IQLUA&s=10" alt="CSS">
                     <br><br>
                     <p>CSS</p>
                 </div>
@@ -141,27 +137,70 @@
                     <p>JavaScript</p>
                 </div>
                 <div class="section-div1-div1">
-                  
-                    <p>TypeScript</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGRqtKd8O17OleqYZtujpqTnnH9Ez1m710qVJZysQGWQ&s=10" alt="CSS">
+                    <br><br>
+                    <p>React JS</p>
                 </div>
 
-                -->
+                <div class="section-div1-div1">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFlLgPyaobC5gwxEEVovDiNojWP_wH4IORIfoJ4jwjnw&s=10" alt="CSS">
+                    <br><br>
+                    <p>MongoDB</p>
+                </div>
 
-                <p>Coming soon...</p>
+                <div class="section-div1-div1">
+                    <img src="https://images.credly.com/images/51aeb74b-ec87-4069-93fc-0ea449c8d77f/twitter_thumb_201604_node.png" alt="CSS">
+                    <br><br>
+                    <p>Node JS</p>
+                </div>
+
+                <div class="section-div1-div1">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvXyqM27GOXG04aEDZ32u_8JSyHNNyv3Yj5UTVO87fxg&s=10" alt="CSS">
+                    <br><br>
+                    <p>Express JS</p>
+                </div>
+
 
             </div>
 
         </section>
 
         <br><br><br>
+
+
         <div class="header" id="project">Projects</div>
-        <br><br><br>
 
         <div class="section3">
-
             <div id="section3-div1">
-                <br>
-                <p>Coming soon...</p>
+
+                <button class="slider-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+
+                <div class="project-slider-viewport">
+                    <div class="project-slider" id="projectSlider">
+
+                        <div class="project-card">
+                            <img src="/Home page files/images/engiPa_image.png" alt="EngiPa project screenshot">
+                            <br>
+                            <h3>EngiPa</h3>
+                            <p>Engineering previous-year question paper portal built with MERN.</p>
+                            <a style="color:skyblue;" href="https://engipa.vercel.app/" target="_blank">View Project ↗</a>
+                        </div>
+
+
+                        <div class="project-card">
+                            <img src="/Home page files/images/portfolio_image.png" alt="Portfolio screenshot">
+                            <br>
+                            <h3>Personal Portfolio</h3>
+                            <p>A personal website showcasing my skills and projects.</p>
+                            <a style="color:skyblue;" href="https://kshitij-portfolio-omega.vercel.app/" target="_blank">View Project ↗</a>
+                        </div>
+
+                    </div>
+
+                    <button class="slider-btn next" onclick="moveSlide(1)">&#10095;</button>
+                    <div class="slider-dots" id="sliderDots"></div>
+
+                </div>
             </div>
 
 
@@ -268,21 +307,20 @@
 
                 </div>
 
-                <div class="section4-div-div2 ">
+                <div class="section4-div-div2">
                     <form action="https://api.web3forms.com/submit" method="POST">
 
                         <input type="hidden" name="access_key" value="f2727b81-39f1-4db5-99f4-b57000265ecb">
-                        <input type="text " placeholder="Name " name="name " required>
 
-                        <input type="email " name="email" placeholder="E-mail " required>
+                        <input type="text" name="name" placeholder="Name" required>
 
-                        <textarea name="Message" id=" " placeholder="Message " required></textarea>
+                        <input type="email" name="email" placeholder="E-mail" required>
 
+                        <textarea name="Message" placeholder="Message" required></textarea>
 
-                        <button>Send</button>
+                        <button type="submit">Send</button>
+
                     </form>
-
-
                 </div>
 
 
